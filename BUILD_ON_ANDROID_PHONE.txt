@@ -1,0 +1,16 @@
+BUILD BLOOD FIGHT USING ONLY YOUR ANDROID PHONE
+
+This project includes a GitHub Actions cloud-build workflow. It is NOT an APK until the workflow succeeds.
+
+1. In your phone browser, sign in to GitHub and create a new repository named blood-fight-as1.
+2. Upload the CONTENTS of this project folder to the repository, including the hidden .github folder and export_presets.cfg. Do not add an extra AS1_Blood_Fight nesting level; project.godot must be at repository root.
+3. Open the repository's Actions tab. If prompted, enable GitHub Actions.
+4. Select "Build BLOOD FIGHT Android APK" and tap "Run workflow".
+5. Wait for the run to finish. A green check means success; a red X means failure and its log must be checked.
+6. Open the successful run and download the artifact named BLOOD-FIGHT-Android-APK. Extract the downloaded ZIP to get BloodFight.apk.
+7. Tap the APK to install. Android may ask you to allow installation from that browser or file manager.
+
+IMPORTANT
+- This workflow is intended to create a debug APK for testing, not a Play Store release.
+- Android export can fail if the build image lacks a compatible Android export template or SDK configuration. If it fails, share the Actions error log/screenshot so the workflow can be corrected.
+- This project has not been compiled or device-tested in this environment. Fighter visuals are procedural placeholders, not finished hand-drawn art.
